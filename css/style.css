@@ -1061,9 +1061,10 @@ body {
     text-decoration: none;
   }
 
-  main .home {
+ /* Main Home Section */
+ main .home {
     width: 600px;
-    height: 300px;
+    height: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1072,6 +1073,27 @@ body {
     background-size: cover;
     animation: slider 25s infinite linear;
   }
+
+  @keyframes slider {
+    0% {
+      background-image: url(../img/image1.png);
+    }
+
+    15% {
+      background-image: url(../img/image2.jpg);
+    }
+
+    30% {
+      background-image: url(../img/image3.jpg);
+    }
+
+    45% {
+      background-image: url(../img/image4.jpg);
+    }
+
+    60% {
+      background-image: url(../img/image5.png);
+    }
 
   main .service .service-ul {
     gap: 20px;
