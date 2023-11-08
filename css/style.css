@@ -1054,14 +1054,47 @@ body {
     z-index: 1;
   }
 
+  /* Main Home Section */
+  main .home {
+    width: 500px;
+    height: 115px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/image1.png);
+    background-size: cover;
+    animation: slider 25s infinite linear;
+  }
+
+  @keyframes slider {
+    0% {
+      background-image: url(../img/image1.png);
+    }
+
+    15% {
+      background-image: url(../img/image2.jpg);
+    }
+
+    30% {
+      background-image: url(../img/image3.jpg);
+    }
+
+    45% {
+      background-image: url(../img/image4.jpg);
+    }
+
+    60% {
+      background-image: url(../img/image5.png);
+    }
+  }
+
   .index-header .index-nav .index-ul .index-li .index-link {
     font-size: 16px;
     color: #111;
     font-family: lato;
     text-decoration: none;
   }
-
-  
 
   main .service .service-ul {
     gap: 20px;
@@ -1220,39 +1253,6 @@ body {
 }
 
 @media only screen and (min-width: 720px) {
- /* Main Home Section */
- main .home {
-    width: 500px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/image1.png);
-    background-size: cover;
-    animation: slider 25s infinite linear;
-  }
-
-  @keyframes slider {
-    0% {
-      background-image: url(../img/image1.png);
-    }
-
-    15% {
-      background-image: url(../img/image2.jpg);
-    }
-
-    30% {
-      background-image: url(../img/image3.jpg);
-    }
-
-    45% {
-      background-image: url(../img/image4.jpg);
-    }
-
-    60% {
-      background-image: url(../img/image5.png);
-    }
 }
 
 /* Portrait tablets and small desktops */
